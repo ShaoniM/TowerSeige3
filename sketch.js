@@ -11,10 +11,12 @@ var slingShot;
 var polygon_img, backgroundImg;
 var score=0;
 var bg = "images/light.jpg";
+
 function preload(){
   getBackgroundImage();
   polygon_img=loadImage("images/polygon.png");
-  
+  backgroundImg = loadImage(bg);
+   console.log(backgroundImg);
 }
 function setup() {
   createCanvas(900,400);
@@ -174,6 +176,5 @@ async function getBackgroundImage(){
      bg = "images/dark.jpg";
    }
 
-   backgroundImg = loadImage(bg);
-   console.log(backgroundImg);
+   
 }
